@@ -24,11 +24,11 @@ def random_prime(fr, to):
 
 
 def find_e(phi):
+    e = 100
     while True:
-        e = 113
         if is_prime(e) and math.gcd(e, phi) == 1:
             return e
-        e += 2
+        e += 1
 
 
 def encrypt(t, e, n):
